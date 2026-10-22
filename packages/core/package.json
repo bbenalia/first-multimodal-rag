@@ -1,0 +1,21 @@
+{
+  "name": "@rag/core",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "download": "tsx src/ingest/download-flickr30k.ts",
+    "typecheck": "tsc -p ."
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^3.7.0",
+    "pg": "^8.16.0",
+    "pgvector": "^0.2.1",
+    "csv-parse": "^6.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/pg": "^8.15.0",
+    "tsx": "^4.20.0"
+  }
+}

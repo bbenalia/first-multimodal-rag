@@ -1,0 +1,20 @@
+{
+  "name": "@rag/api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch --env-file=../../.env src/server.ts",
+    "typecheck": "tsc -p ."
+  },
+  "dependencies": {
+    "@rag/core": "workspace:*",
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.20.0"
+  }
+}
